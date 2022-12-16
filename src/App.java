@@ -46,11 +46,10 @@ public class App {
         target.setText("");
     }
     public static void addMessage(String message, JTextArea targetTextArea, JTextField targetTextField){
-        if(message==""){
-            targetTextArea.append("Carlos dice:"+message+"\n");
+        if(message.equalsIgnoreCase("")){
             resetText(targetTextField);
         }else{
-           
+            targetTextArea.append("Carlos dice:"+message+"\n");
         }
         
     }
